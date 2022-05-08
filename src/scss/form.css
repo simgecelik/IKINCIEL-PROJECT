@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Lato:wght@300&family=Nunito:wght@200&display=swap");
+/*.formContainer {
+  
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+    height: 67.5rem;
+    width: 67.813rem;
+    background-color: #4B9CE2;
+}*/
+
+
+
+
+.formContainer {
+  top: 16.438rem;
+  left: 67.813rem;
+  width: 35.563rem;
+  height: 34.625rem;
+  background-color: #fbfbfb;
+}
+.formi {
+  position: absolute;
+  top: 16.438rem;
+  left: 67.813rem;
+  width: 35.563rem;
+  height: 34.625rem;
+  background: white 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 12px #1e36480a;
+  border-radius: 0.031rem;
+  opacity: 1;
+  font-family: "Nunito";
+}
+.formi.title {
+
+  text-align: center;
+  font: normal normal bold 2rem/2.688rem Nunito;
+  letter-spacing: 0rem;
+  color: #525252;
+}
+
+.formContainer input[type="text"] {
+  background: #f4f4f4;
+  border-radius: 0.5rem;
+  opacity: 1;
+  top: 30.813rem;
+  left: 74.375rem;
+  width: 24.313rem;
+  height: 2.813rem;
+  color: #99a0a7;
+}
+
+.formContainer input[type="password"] {
+  background: #f4f4f4 0% 0% no-repeat padding-box;
+  border-radius: 0.5rem;
+  opacity: 1;
+  top: 35.375rem;
+  left: 73.438rem;
+  width: 24.313rem;
+  height: 2.813rem;
+  border: 1px solid #4b9ce2;
+}
+
+.loginButton {
+  top: 40.75rem;
+  left: 73.438rem;
+  width: 24.313rem;
+  height: 2.813rem;
+  background: var(--unnamed-color-4b9ce2) 0% 0% no-repeat padding-box;
+  background: #4b9ce2;
+  border-radius: 0.5rem;
+  opacity: 1;
+}
+
+.formContainer label {
+  display: block;
+  color: #525252;
+  opacity: 1;
+  font: normal normal bold 18px/24px;
+  font-family: "bold Nunito";
+  letter-spacing: 0rem;
+  top: 33.813rem;
+  left: 73.5rem;
+  width: 1.875rem;
+  height: 1.25rem;
+}

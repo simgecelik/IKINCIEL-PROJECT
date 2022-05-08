@@ -1,0 +1,25 @@
+.containerregister{
+  display: flex;
+  float: left;
+  /*justify-content: flex-start;*/
+}
+
+.imageregister {
+  top: 0rem;
+  left: 0rem;
+  width: 52.188rem;
+  height: 67.5rem;
+  /*width:36.188rem;
+  height:67.5rem;*/
+}
+
+.formRegister{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 67.5rem;
+  width: 67.813rem;
+ /* height: 17.5rem;
+  width: 17.813rem;*/
+  background-color:#fbfbfb;
+}

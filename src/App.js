@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Register from './pages/Register';
+import Rooter from './router/Rooter'
+import Home from './pages/Home';
+import useWindowSize from './hooks/useWindowSize';
+import { Routes } from 'react-router-dom';
+
 
 function App() {
+  const [w] = useWindowSize(1920, 1080);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Rooter/>
     </div>
   );
 }
-
 export default App;

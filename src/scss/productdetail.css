@@ -1,0 +1,14 @@
+.containerproduct{
+    display:flex;
+    flex-direction:row;
+   /* width:92.5rem;
+    height: 48.063rem;
+    top:6.25rem;
+    left:13.75rem;*/
+}
+.imageproduct{
+   width:43.75rem;
+   height: 46.063rem;
+   top:7.25rem;
+   left:14.688rem;
+}
