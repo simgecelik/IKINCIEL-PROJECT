@@ -1,8 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import homeimage from "../images/Banner1.jpg";
-import Logo from "../constants/Logo";
 import "../css/home.css";
+import NavbarHome from "../components/NavbarHome"
 
 import { useState, useEffect } from "react";
 import { getAllProduct, getProductById } from "../services/productsService";
@@ -45,7 +45,7 @@ function Home() {
     <div className="container">
       <div className="row">
         {" "}
-        <Logo />
+        <NavbarHome/>
       </div>
       <div className="row">
         <img src={homeimage} alt="homeimage"></img>
