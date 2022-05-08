@@ -1,0 +1,78 @@
+.productdetailpage {
+  width: 120rem;
+  height: 67.5rem;
+}
+
+.containerproduct {
+  display: flex;
+  flex-direction: row;
+  width: 92.5rem;
+  height: 48.063rem;
+  top: 6.25rem;
+  left: 13.75rem;
+  background-color: #ffff;
+  position: relative;
+}
+.imageproduct {
+  width: 43.75rem;
+  height: 46.063rem;
+  top: 7.25rem;
+  left: 26.688rem;
+}
+
+.productdetail > h1 {
+  font-size: 31px/23px;
+  text-align: left;
+  color:#555555;
+}
+.productdetail > h2 {
+  font-size: 25px;
+  text-align: left;
+ 
+  color:#525252;
+}
+
+.productdetail > h3 {
+  font-size: 18px;
+  color: #525252;
+  text-align: left;
+  font-weight: bold;
+  
+}
+
+.productdetail > p {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #555555;
+  
+}
+
+span{
+    font-weight:bold;
+    color:#525252;
+}
+
+.buybutton {
+  /* UI Properties */
+  color: #ffff;
+  text-align: center;
+  font-size: 18px/24px "Nunito";
+  font-weight: bold;
+  letter-spacing: 0px;
+  /* UI Properties */
+  background: #4b9ce2 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  top: 395px;
+  left: 995px;
+  width: 235px;
+  height: 45px;
+  border: none;
+  margin-right: 10px;
+ 
+}
+
+.buttons{
+  display: flex;
+}
+

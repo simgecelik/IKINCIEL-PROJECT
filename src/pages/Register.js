@@ -1,6 +1,6 @@
 import React from "react";
 import image from "../images/Group52.jpg";
-import "../scss/register.css";
+import "../css/register.css";
 import Logo from "../constants/Logo";
 import Form from "../components/Form";
 function Register() {

@@ -1,8 +1,8 @@
 import React from 'react'
 import image from '../images/Group52.jpg'
-import '../scss/register.css'
+import '../css/register.css'
 import Logo from '../constants/Logo'
-import Form from '../components/Form'
+import FormLogin from '../components/FormLogin'
 function Login() {
   return (
     <div className="containerregister">
@@ -16,7 +16,7 @@ function Login() {
     </div>
     <div className="formRegister">
       <Logo style={{position:"absolute"}}/>
-      <Form />
+      <FormLogin />
     </div>
   </div>
   )

@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from "react";
-import clsx from "clsx";
+import React from "react";
+import { useEffect, useState } from "react";
+import { createToken } from "../services/tokenServices";
 import { Formik } from "formik";
-import "../css/form.css";
+import clsx from "clsx";
 import { LoginSchema } from "../constants/yupSchema";
 import { Link } from "react-router-dom";
 
-import { createToken } from "../services/tokenServices";
-
-
-function Form() {
+function FormLogin() {
   const [loading, setLoading] = useState(false);
   const [isAuth, setIsAuth] = useState(false);
 
@@ -23,13 +21,12 @@ function Form() {
   const token = (auth) => {
     const registerResponse = createToken(auth);
   };
-
   return (
     <>
       <div className="formContainer">
         <div className="formi">
-          <h3 className="title">Üye Ol</h3>
-          <p>Fırsatlardan yararlanmak için üye ol!</p>
+          <h3 className="title">Giriş Yap</h3>
+          <p>Fırsatlardan yararlanmak için giriş yap!</p>
 
           {isAuth ? (
             <div> Hoşgeldiniz </div>
@@ -94,8 +91,8 @@ function Form() {
                         onClick={handleSubmit}
                         disabled={loading}
                       >
-                        <Link to="/login" style={{ textDecoration: "none" }}>
-                          <p>Üye Ol</p>
+                        <Link to="/" style={{ textDecoration: "none" }}>
+                          <p>Giriş Yap</p>
                         </Link>
                       </button>
 
@@ -103,9 +100,9 @@ function Form() {
                     </div>
                     <br></br>
                     <p>
-                      Hesabın var mı?
-                      <Link to="/login" style={{ textDecoration: "none" }}>
-                        Giriş Yap
+                      Hesabın yok mu?{" "}
+                      <Link to="/register" style={{ textDecoration: "none" }}>
+                        Üye Ol
                       </Link>
                     </p>
                   </div>
@@ -119,4 +116,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default FormLogin;

@@ -1,0 +1,41 @@
+.container-fluid {
+  top: 0rem;
+  left: 0rem;
+  width: 120rem;
+  height: 5rem;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.navbar.brand {
+  justify-content: space-between;
+}
+
+.left {
+  align-items: center;
+}
+
+.addproduct {
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  opacity: 1;
+  border: none;
+  color: #4b9ce2;
+  text-align: right;
+  font-weight: bold;
+  font-size: 15px/20px;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+.myaccount {
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  opacity: 1;
+  color: #4b9ce2;
+  text-align: left;
+  font-weight: bold;
+  font-size: 15px/20px;
+  letter-spacing: 0px;
+  opacity: 1;
+  border: none;
+}

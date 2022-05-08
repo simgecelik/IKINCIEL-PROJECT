@@ -1,16 +1,22 @@
 import React from "react";
-import Logo from "../constants/Logo";
-import '../scss/navbar.css'
+import "../css/navbar.css";
+import logoimg from "../images/Group6607.png";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-light bg-light">
-    <div className="container-fluid col-12">
-      <span className="navbar-brand mb-0 h1"><Logo/></span>
-      <span className="navbar-brand mb-0 h1"> Ürün Ekle </span>
-      <span className="navbar-brand mb-0 h1"> Giriş Yap</span>
-    </div>
-  </nav>
+      <div className="left">
+        <img src={logoimg} alt="logo"></img>
+      </div>
+      <div className="right">
+        <button className="addproduct">
+          <i class="fa fa-plus"></i>Ürün Ekle
+        </button>
+        <button className="myaccount">
+          <i class="fa fa-user"></i>Hesabım
+        </button>
+      </div>
+    </nav>
   );
 }
 

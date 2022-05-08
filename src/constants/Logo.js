@@ -1,10 +1,10 @@
 import React from 'react'
-import '../scss/logo.css'
+import '../css/logo.css'
 import logo from '../images/Group6607.png';
 const Logo= props => {
   return (
     <div className='logoContainer'>
-      <img src={logo} alt="ikincielProject"></img>
+      <img className="logoimg" src={logo} alt="ikincielProject"></img>
     </div>
   );
 }
