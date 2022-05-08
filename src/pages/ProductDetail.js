@@ -1,32 +1,27 @@
 import React, { useState, useEffect } from "react";
-import { useLocation} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { getProduct } from "../services/productsService";
 import logo from "../images/Banner1.jpg";
 import "../css/productdetail.css";
 import Navbar from "../components/Navbar";
 import Offer from "../modals/Offer";
-import Buy from "../modals/Buy"
+import Buy from "../modals/Buy";
 
 function ProductDetail(props) {
   const [data, setData] = useState([]);
-  
 
   useEffect(() => {
     getData();
   }, []);
 
   const item2 = props.item;
-  console.log("props", item2);
   const location = useLocation();
   const state = location.state;
-  console.log("SATE:", state);
 
   const getData = async () => {
     const data = await getProduct(state);
     setData(data);
-    console.log("data:", data);
   };
-  console.log("dataaaaa");
 
   return (
     <div className="productdetailpage">
@@ -38,8 +33,12 @@ function ProductDetail(props) {
         <div className="imageproduct">
           <img
             src={logo}
-            style={{ width: "700px", height: "737px",top: "116px",
-            left:"14.688rem" }}
+            style={{
+              width: "700px",
+              height: "737px",
+              top: "116px",
+              left: "14.688rem",
+            }}
             alt="hello"
           />
         </div>
@@ -47,22 +46,34 @@ function ProductDetail(props) {
         <div className="productdetail">
           <h1>{data.name}</h1>
           <ul style={{ listStyleType: "none", textAlign: "left" }}>
-            <li><span>Marka: </span>{data.brand}</li><br></br>
-            <li><span >Renk: </span>{data.color}</li><br></br>
-            <li><span >Kullanım Durumu: </span>{data.description}</li><br></br>
+            <li>
+              <span>Marka: </span>
+              {data.brand}
+            </li>
+            <br></br>
+            <li>
+              <span>Renk: </span>
+              {data.color}
+            </li>
+            <br></br>
+            <li>
+              <span>Kullanım Durumu: </span>
+              {data.description}
+            </li>
+            <br></br>
           </ul>
-          <h2 style={{fontWeight:"bold"}}>{data.price} TL</h2><br></br>
+          <h2 style={{ fontWeight: "bold" }}>{data.price} TL</h2>
+          <br></br>
           <div className="buttons">
-             <Buy/>
-             <Offer productdata={data}/>
-          </div><br></br>
+            <Buy />
+            <Offer productdata={data} />
+          </div>
+          <br></br>
           <h3>Açıklama</h3>
           <p>{data.description}</p>
         </div>
       </div>
-     
     </div>
-    
   );
 }
 
